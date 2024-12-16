@@ -1,0 +1,1 @@
+export const ARI_DECIMALS = 6

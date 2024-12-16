@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-base text-gray-800 bg-gray-200;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(rgba(145, 158, 171, 0), rgba(145, 158, 171, 0.12)) */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+@layer components {
+  .heading-h1 {
+    @apply text-h1 md:text-h1-md lg:text-h1-lg xl:text-h1-md font-bold;
+  }
+  .heading-h2 {
+    @apply text-h2 md:text-h2-md lg:text-h2-lg xl:text-h2-md font-bold;
+  }
+  .heading-h3 {
+    @apply text-h3 md:text-h3-md lg:text-h3-lg xl:text-h3-md font-bold;
+  }
+  .heading-h4 {
+    @apply text-h4 md:text-h4-md lg:text-h4-lg xl:text-h4-md font-bold;
+  }
+  .heading-h5 {
+    @apply text-h5 md:text-h5-md lg:text-h5-lg xl:text-h5-md font-bold;
+  }
+  .heading-h6 {
+    @apply text-h6 md:text-h6-md lg:text-h6-lg xl:text-h6-md font-bold;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-z16;
+  }
+  .input {
+    @apply px-3 py-[14px] text-body2 bg-gray-500/10 hover:bg-gray-500/20 placeholder:text-gray-500 rounded-lg focus:outline-none focus-visible:outline-none w-full;
+  }
+}
+
+@layer utilities {
+  .divider {
+    @apply border-t border-t-gray-500/[0.24] border-dashed;
+  }
+}
+
+.wallet-adapter-dropdown-list {
+  @apply bg-white text-body1 !text-gray-800 rounded-md shadow-z16;
+}
+
+.wallet-adapter-dropdown-list-item {
+  @apply text-body1 !text-gray-800;
+}
+
+.wallet-adapter-dropdown-list-item:hover {
+  @apply !bg-black/[0.04];
+}
